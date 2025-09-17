@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品详情 - PackPerfect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">PackPerfect</a>
+            </div>
+            <ul>
+                <li><a href="products.html">产品中心</a></li>
+                <li><a href="index.html#materials">材料与工艺</a></li>
+                <li><a href="#" class="cta-nav">开始定制</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="产品主图">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="产品缩略图1" class="active">
+                    <img src="https://images.pexels.com/photos/220749/pexels-photo-220749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="产品缩略图2">
+                    <img src="https://images.pexels.com/photos/932261/pexels-photo-932261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="产品缩略图3">
+                </div>
+            </div>
+            <div class="product-info-and-customizer">
+                <div class="product-description">
+                    <h1>产品包装盒</h1>
+                    <p>我们的产品包装盒是品质与设计的完美结合。它采用优质、环保的材料制成，不仅坚固耐用，能够完美保护您的产品，其现代而优雅的设计更能提升您品牌的整体形象。无论是在零售货架上还是在客户手中，它都能给消费者留下深刻的第一印象。</p>
+                    <p>适用于各种产品，从电子产品到化妆品，都能提供量身定制的解决方案。我们提供多种尺寸和表面处理选项，让您的包装独一无二。</p>
+                </div>
+                <div class="customizer">
+                    <h2>开始您的定制</h2>
+                    <div class="customizer-options">
+                        <div class="option">
+                            <label for="size-select">尺寸:</label>
+                            <select id="size-select" name="size">
+                                <option value="small">小 (10x10x5 cm)</option>
+                                <option value="medium" selected>中 (20x15x8 cm)</option>
+                                <option value="large">大 (30x20x10 cm)</option>
+                                <option value="custom">自定义尺寸</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label for="material-select">材料:</label>
+                            <select id="material-select" name="material">
+                                <option value="kraft">牛皮纸</option>
+                                <option value="coated" selected>铜版纸</option>
+                                <option value="specialty">特种纸</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label for="quantity-input">数量:</label>
+                            <input type="number" id="quantity-input" name="quantity" value="100" min="50">
+                        </div>
+                    </div>
+                    <div class="price-and-cta">
+                        <p class="price">预计价格: <strong>$150.00</strong></p>
+                        <a href="#" class="cta-button">添加到购物车</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 PackPerfect. 版权所有。</p>
+            <ul>
+                <li><a href="products.html">产品</a></li>
+                <li><a href="index.html#materials">工艺</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

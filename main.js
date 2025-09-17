@@ -4,11 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const href = this.getAttribute('href');
+            // Make sure the href is not just a hash, which would be an invalid selector
+            if (href && href !== '#') { 
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
         });
     });
 
@@ -23,9 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.1
     });
 
-    document.querySelectorAll('.how-it-works, .featured-products, .why-small-batch, .final-cta').forEach(section => {
-        section.classList.add('reveal');
-        observer.observe(section);
+    document.querySelectorAll('.reveal').forEach(element => {
+        observer.observe(element);
     });
 
 });
