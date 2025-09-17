@@ -1,14 +1,115 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PackPerfect - 小批量定制包装</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">PackPerfect</a>
+            </div>
+            <ul>
+                <li><a href="#products">产品</a></li>
+                <li><a href="#why-small-batch">为何选择小批量？</a></li>
+                <li><a href="#" class="cta-nav">设计实验室</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-headline">出色的包装，<br>小批量定制。</h1>
+                <p class="hero-subheadline">创造让顾客惊叹的定制包装。几分钟内完成设计和下单。</p>
+                <a href="#" class="cta-button">立即设计</a>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>运作流程</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>选择您的风格</h3>
+                    <p>从我们精选的包装盒、手提袋和邮寄盒中选择。</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>在线定制</h3>
+                    <p>使用我们直观的在线编辑器添加您的徽标、颜色和文字。</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>快速交付</h3>
+                    <p>最快 10 个工作日内收到您的定制包装。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="featured-products">
+            <h2>无尽的可能性</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1594033430646-a7c437155043?q=80&w=2070&auto=format&fit=crop" alt="产品包装盒">
+                    <h3>产品包装盒</h3>
+                    <p>适用于零售和运输。</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1621941202023-7a91a9590749?q=80&w=1974&auto=format&fit=crop" alt="邮寄盒">
+                    <h3>邮寄盒</h3>
+                    <p>坚固耐用，适合运输。</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1570823635306-2a520b1114ff?q=80&w=2070&auto=format&fit=crop" alt="礼品袋">
+                    <h3>礼品袋</h3>
+                    <p>适用于任何场合的优雅选择。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-small-batch" class="why-small-batch">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>为何选择小批量？</h2>
+                    <ul>
+                        <li><strong>低起订量：</strong> 订单数量可低至 50 件。</li>
+                        <li><strong>成本效益高：</strong> 非常适合初创企业和特别促销活动。</li>
+                        <li><strong>可持续性：</strong> 只订购您需要的数量，减少浪费。</li>
+                        <li><strong>快速周转：</strong> 在创纪录的时间内获得您的定制设计。</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.unsplash.com/photo-1618042433242-65f6f707f4a5?q=80&w=1974&auto=format&fit=crop" alt="小批量包装">
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <h2>准备好创作了吗？</h2>
+            <p>让我们一起创造一些令人惊叹的东西。</p>
+            <a href="#" class="cta-button">开始设计</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 PackPerfect. 版权所有。</p>
+            <ul>
+                <li><a href="#">材料</a></li>
+                <li><a href="#">可持续性</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
